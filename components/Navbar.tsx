@@ -7,11 +7,11 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full bg-[#E9E0D7]">
-      <div className="mx-auto max-w-7xl px-4 py-2">
-        <div className="flex items-center justify-between">
+    <div className="w-full bg-[#E9E0D7] shadow-xl sticky top-0">
+      <div className="mx-auto max-w-7xl px-4 py-2 ">
+        <div className="flex items-center justify-between ">
           {/* Left: Logo + Title */}
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 ">
             <Image
               src="/archana.png"
               alt="Archana Logo"
