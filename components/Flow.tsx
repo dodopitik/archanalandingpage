@@ -1,19 +1,24 @@
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
 
-export default function About() {
+const Flow = () => {
   return (
-    <section id="about" className="bg-[#fff]">
-      <div className="max-w-screen-xl mx-auto px-6 md:px-10">
-        <div className="grid grid-cols-1 xl:grid-cols-[3fr_1fr] md:grid-cols-2 gap-2 sm:gap-50 items-center">
-          <Fade
-            delay={500}
-            duration={1000}
-            cascade
-            damping={1e-1}
-            direction="left"
-          >
-            <div className="pt-10 sm:pt-15">
+    <section className="bg-[#fff]">
+      <div className="max-w-screen-xl mx-auto px-6 md:px-10 py-15">
+        <div className="grid grid-cols-1 xl:grid-cols-[1fr_3fr] md:grid-cols-2 gap-2 sm:gap-50 items-center">
+          <div className=" order-2">
+            <Fade delay={500} cascade damping={1e-1} direction="left">
+              <Image
+                src="/caca.png"
+                width={450}
+                height={350}
+                alt="Hero Illustration"
+              />
+            </Fade>
+          </div>
+          {/* Title */}
+          <div className="pt-10 sm:pt-15 order-1 md:order-2">
+            <Fade delay={500} cascade damping={1e-1} direction="right">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
                 Tingkatkan pengalaman pelanggan dengan solusi pemesanan modern
                 berbasis QR Code !
@@ -28,27 +33,12 @@ export default function About() {
                 drastis. Semua proses tercatat otomatis, sehingga owner dapat
                 mengambil keputusan berbasis data yang akurat.
               </p>
-            </div>
-          </Fade>
-          <Fade
-            delay={500}
-            duration={1000}
-            cascade
-            damping={1e-1}
-            direction="right"
-          >
-            <div>
-              <Image
-                src="/mama.png"
-                width={650}
-                height={650}
-                alt="Hero Illustration"
-              />
-            </div>
-          </Fade>
-          {/* Title */}
+            </Fade>
+          </div>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default Flow;

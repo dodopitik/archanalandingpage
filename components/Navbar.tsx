@@ -7,7 +7,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full bg-[#E9E0D7] shadow-xl sticky top-0">
+    <div className="w-full bg-[#E9E0D7] shadow-xl sticky top-0 z-10">
       <div className="mx-auto max-w-7xl px-4 py-2 ">
         <div className="flex items-center justify-between ">
           {/* Left: Logo + Title */}
@@ -24,10 +24,10 @@ export default function Navbar() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/pricing">Pricing</Link>
-            <Link href="/contact">Contact</Link>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#contact">Contact</a>
           </nav>
 
           {/* Search (placeholder) */}
@@ -57,10 +57,18 @@ export default function Navbar() {
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden mt-3 space-y-2 items-center mx-auto">
-            <Link href="/" className="block">Home</Link>
-            <Link href="/about" className="block">About</Link>
-            <Link href="/pricing" className="block">Pricing</Link>
-            <Link href="/contact" className="block">Contact</Link>
+            <a href="#home" className="block">
+              Home
+            </a>
+            <a href="#about" className="block">
+              About
+            </a>
+            <a href="#pricing" className="block">
+              Pricing
+            </a>
+            <a href="" className="block">
+              Contact
+            </a>
             <div>
               <input
                 type="text"

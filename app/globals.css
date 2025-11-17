@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+/* Marquee Logo Brand */
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee__track {
+  display: flex;
+  gap: 3rem; /* jarak antar logo */
+  width: max-content;
+  animation: marquee-scroll 25s linear infinite;
+}
+
+.marquee__track:hover {
+  animation-play-state: paused; /* kalau mau berhenti saat di-hover */
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+html {
+  scroll-behavior: smooth;
+}
