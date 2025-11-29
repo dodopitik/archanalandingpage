@@ -32,13 +32,13 @@ const PricingCarousel = () => {
                         Rp
                       </span>
                       <span className="text-5xl font-bold text-gray-900">
-                        300
+                        1
                       </span>
                       <span className="text-2xl font-semibold text-gray-600">
                         K
                       </span>
                     </div>
-                    <p className="text-gray-600 mt-2">per bulan</p>
+                    <p className="text-gray-600 mt-2">per orderan</p>
                   </div>
 
                   {/* Setup Cost */}

@@ -15,18 +15,14 @@ export default function About() {
           >
             <div className="pt-10 sm:pt-15">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                Tingkatkan pengalaman pelanggan dengan solusi pemesanan modern
-                berbasis QR Code !
+                Naikkan Keuntungan Room Service Hotelmu 2 Kali Lipat !
               </h2>
 
               <p className="text-gray-600 text-lg max-w-3xl leading-relaxed">
-                <strong>Archana Smart Order</strong> membantu bisnis F&B dan
-                perhotelan bekerja lebih cepat, rapi, dan efisien. Dengan sistem
-                yang terintegrasi mulai dari pemesanan, manajemen meja, hingga
-                pembayaran, kamu dapat mengurangi antrian, meminimalisir
-                kesalahan pesanan, dan meningkatkan kepuasan pelanggan secara
-                drastis. Semua proses tercatat otomatis, sehingga owner dapat
-                mengambil keputusan berbasis data yang akurat.
+                Setiap tamu dapat melakukan order langsung dari meja atau kamar
+                tanpa menunggu staf. Alur pemesanan menjadi lebih cepat, akurat,
+                dan efisien. Tanpa antrian, tanpa salah input, dan tanpa
+                kehilangan peluang penjualan
               </p>
             </div>
           </Fade>

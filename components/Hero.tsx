@@ -16,9 +16,9 @@ export default function Hero() {
                 <span className="text-[#9E7A57]">Smart Order Application</span>
               </h1>
               <p className="mt-6 text-lg text-gray-700">
-                Sistem pemesanan modern berbasis QR untuk Hotel & Restoran
-                otomatis, cepat, dan langsung tersampaikan ke Kasir dan Chef
-                tanpa ribet.
+                Sistem pemesanan modern berbasis QR untuk Hotel , Restoran &
+                Kos-Kosan Modern otomatis, cepat, dan langsung tersampaikan ke
+                Kasir , Chef atau Operator tanpa ribet.
               </p>
             </Fade>
             <div className="mt-10 flex justify-center gap-4">

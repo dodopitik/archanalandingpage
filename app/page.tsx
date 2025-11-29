@@ -6,7 +6,6 @@ import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import PricingCarousel from "@/components/PricingCarousel";
 
-
 export default function Home() {
   return (
     <>
@@ -16,7 +15,6 @@ export default function Home() {
       <Flow />
       <ArchanaPage />
       <PricingCarousel />
-      <Footer />
     </>
   );
 }

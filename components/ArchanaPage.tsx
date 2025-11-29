@@ -5,7 +5,7 @@ import React from "react";
 export default function ArchanaPage() {
   return (
     <main className="min-h-screen bg-[#E9E0D7]">
-      <section className="max-w-6xl mx-auto px-4 py-16 lg:py-24">
+      <section className="max-w-7xl mx-auto px-4 py-16 lg:py-24">
         {/* GRID UTAMA: TEKS + HIGHLIGHT CARD */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* KIRI: TENTANG ARCHANA */}
@@ -17,7 +17,7 @@ export default function ArchanaPage() {
             <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
               Sistem Pemesanan Modern
               <span className="block text-[#9E7A57]">
-                Berbasis QR Code untuk F&amp;B &amp; Hotel
+                Berbasis QR Code untuk F&amp;B Hotel
               </span>
             </h1>
 
