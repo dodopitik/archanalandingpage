@@ -3,13 +3,13 @@ import { Fade } from "react-awesome-reveal";
 
 const Flow = () => {
   return (
-    <section className="bg-[#fff]">
+    <section className="bg-[#fff] scroll-mt-45">
       <div className="max-w-7xl mx-auto px-6 md:px-10 py-5">
         <div className="grid grid-cols-1 xl:grid-cols-[1fr_3fr] md:grid-cols-2 gap-2 sm:gap-50 items-center">
           <div className=" order-2">
             <Fade delay={500} cascade damping={1e-1} direction="left">
               <Image
-                src="/caca.png"
+                src="/feature/tab.svg"
                 width={450}
                 height={350}
                 alt="Hero Illustration"
@@ -61,7 +61,7 @@ const Flow = () => {
           >
             <div>
               <Image
-                src="/mama.png"
+                src="/about/about2.png"
                 width={650}
                 height={650}
                 alt="Hero Illustration"

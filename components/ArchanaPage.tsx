@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ArchanaPage() {
   return (
-    <main className="min-h-screen bg-[#E9E0D7]">
+    <main className="min-h-screen bg-[#E9E0D7] scroll-mt-45">
       <section className="max-w-7xl mx-auto px-4 py-16 lg:py-24">
         {/* GRID UTAMA: TEKS + HIGHLIGHT CARD */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">

@@ -4,7 +4,7 @@ import { Slide, Fade } from "react-awesome-reveal";
 
 export default function Hero() {
   return (
-    <div id="home" className=" bg-[#E9E0D7]">
+    <div id="home" className=" bg-[#E9E0D7] scroll-mt-45">
       <div className="max-w-screen-2xl  mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Text section */}
         <div className="py-10 sm:py-24 px-6 order-2 ">
@@ -23,12 +23,12 @@ export default function Hero() {
             </Fade>
             <div className="mt-10 flex justify-center gap-4">
               <Link href="https://wa.me/62895363076706?text=Halo%2C%20saya%20mau%20lihat%20demo%20aplikasinya">
-                <button className="px-6 py-3 rounded-lg bg-[#5C4733] text-white font-semibold hover:bg-[#9E7A57] transition">
+                <button className="px-6 py-3 rounded-lg bg-[#5C4733] text-white font-semibold text-sm sm:text-base hover:bg-[#9E7A57] transition">
                   Contact Whatsapp
                 </button>
               </Link>
               <Link href="https://happy-living.untoxic.space">
-                <button className="px-6 py-3 rounded-lg border bg-[#5C4733] text-white font-semibold hover:bg-[#9E7A57] transition">
+                <button className="px-6 py-3 rounded-lg border bg-[#5C4733] text-white text-sm sm:text-base font-semibold hover:bg-[#9E7A57] transition">
                   Lihat Demo
                 </button>
               </Link>

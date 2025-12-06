@@ -25,10 +25,10 @@ export default function Navbar() {
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
             <Link href="/">Home</Link>
-            <a href="/#about">About</a>
-            <Link href="/feature">Feature</Link>
-            <a href="/#pricing">Pricing</a>
-            <a href="/#contact">Contact</a>
+            <Link href="/#about">About</Link>
+            <Link href="/feature">Detail</Link>
+            <Link href="/#pricing">Pricing</Link>
+            <Link href="/#contact">Contact</Link>
           </nav>
 
           {/* Search (placeholder) */}
@@ -58,21 +58,21 @@ export default function Navbar() {
         {/* Mobile menu */}
         {open && (
           <div className="md:hidden mt-3 space-y-2 items-center mx-auto">
-            <a href="/#home" className="block">
+            <Link href="/#home" className="block">
               Home
-            </a>
-            <a href="/#about" className="block">
+            </Link>
+            <Link href="/#about" className="block">
               About
-            </a>
-            <a href="/feature" className="block">
-              Feature
-            </a>
-            <a href="/#pricing" className="block">
+            </Link>
+            <Link href="/feature" className="block">
+              Detail
+            </Link>
+            <Link href="/#pricing" className="block">
               Pricing
-            </a>
-            <a href="" className="block">
+            </Link>
+            <Link href="" className="block">
               Contact
-            </a>
+            </Link>
             <div>
               <input
                 type="text"

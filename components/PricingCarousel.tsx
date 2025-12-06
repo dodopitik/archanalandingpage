@@ -5,7 +5,7 @@ import Tilt from "react-parallax-tilt";
 
 const PricingCarousel = () => {
   return (
-    <div id="pricing" className="bg-[#fff] pt-10 pb-20">
+    <div id="pricing" className="bg-[#fff] pt-10 pb-20 scroll-mt-45">
       <div className="max-w-screen-xl mx-auto px-6 md:px-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 text-center">
           Pricing
@@ -93,9 +93,14 @@ const PricingCarousel = () => {
                   </div>
 
                   {/* CTA Button */}
-                  <button className="w-full bg-[#9E7A57] hover:bg-[#dfb58c] text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=62895363076706&text=Halo%2C+saya+mau+berlangganan+aplikasinya&type=phone_number&app_absent=0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block w-full bg-[#9E7A57] hover:bg-[#dfb58c] text-white font-semibold py-3 px-6 rounded-lg text-center transition-colors duration-200"
+                  >
                     Pilih Paket
-                  </button>
+                  </a>
                 </div>
               </div>
             </Tilt>

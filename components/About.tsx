@@ -3,7 +3,7 @@ import { Fade } from "react-awesome-reveal";
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#fff]">
+    <section id="about" className="bg-[#fff] scroll-mt-45">
       <div className="max-w-screen-xl mx-auto px-6 md:px-10">
         <div className="grid grid-cols-1 xl:grid-cols-[3fr_1fr] md:grid-cols-2 gap-2 sm:gap-50 items-center">
           <Fade
@@ -35,7 +35,7 @@ export default function About() {
           >
             <div>
               <Image
-                src="/mama.png"
+                src="/about/about1.png"
                 width={650}
                 height={650}
                 alt="Hero Illustration"

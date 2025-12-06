@@ -1,7 +1,6 @@
 import About from "@/components/About";
 import ArchanaPage from "@/components/ArchanaPage";
 import Flow from "@/components/Flow";
-import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import PricingCarousel from "@/components/PricingCarousel";

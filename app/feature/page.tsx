@@ -4,22 +4,28 @@ import { useState } from "react";
 
 const fiturList = [
   {
-    name: "Digital Payments",
-    title: "Digital Payments",
-    desc: "Terima pembayaran non-tunai lebih cepat, aman, dan otomatis tercatat dalam sistem.",
-    img: "/featurecart.png",
+    name: "Halaman Depan",
+    title: "Halaman Depan",
+    desc: "Halaman depan adalah halaman utama dari aplikasi. Di halaman depan, pengguna dapat melihat menu, produk, dan layanan yang tersedia.",
+    img: "/feature/Home Page.svg",
   },
   {
-    name: "Dine In & Take Away",
-    title: "Dine In & Take Away",
-    desc: "Terima pembayaran non-tunai lebih cepat, aman, dan otomatis tercatat dalam sistem.",
-    img: "/featuredashboard.png",
+    name: "Kerajang Menu",
+    title: "Kerajang Menu",
+    desc: "Kerajang Menu adalah halaman yang menampilkan menu produk yang tersedia. Di kerajang menu, pengguna dapat melihat menu yang mereka pilih",
+    img: "/feature/cart.svg",
   },
   {
-    name: "Dasbor",
-    title: "Dasbor",
-    desc: "Tampilkan ringkasan data secara cepat dan real-time untuk membantu analisa produktivitas bisnis Anda.",
-    img: "/featuredashboard.png",
+    name: "Halaman Checkout",
+    title: "Halaman Checkout",
+    desc: "Halaman Checkout menampilkan detail pemesanan yang telah dipilih lalu membayar pesanan mereka.",
+    img: "/feature/co 2.svg",
+  },
+  {
+    name: "Nota Pembayaran",
+    title: "Nota Pembayaran",
+    desc: "Nota Pembayaran menampilkan detail pembayaran yang telah dilakukan dan mencetak nota.",
+    img: "/feature/nota.svg",
   },
 ];
 
@@ -35,19 +41,19 @@ export default function Feature() {
   };
 
   return (
-    <div className="max-w-7xl h-screen mx-auto py-10">
+    <div className="max-w-7xl mx-auto py-10 px-4">
       <h2 className="text-center text-3xl font-semibold mb-6">
-        Fitur Unggulan Kami
+        Detail Aplikasi
       </h2>
 
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center gap-4 mb-10">
+      <div className="flex flex-wrap justify-center gap-3 mb-10">
         {fiturList.map((item, idx) => (
           <button
             key={idx}
             className={`px-4 py-2 rounded-full text-sm ${
               active === idx
-                ? "bg-red-500 text-white"
+                ? "bg-[#5C4733] text-white"
                 : "text-gray-700 hover:text-black"
             }`}
             onClick={() => setActive(idx)}
@@ -57,12 +63,14 @@ export default function Feature() {
         ))}
       </div>
 
-      {/* Content Slider */}
-      <div className="relative max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center px-5 ">
-        {/* Left Arrow */}
+      {/* Content */}
+      <div className="relative grid grid-cols-1 lg:grid-cols-2 gap-10 items-center max-w-6xl mx-auto">
+        {/* Arrow desktop only */}
         <button
           onClick={prevSlide}
-          className="absolute left-0 top-1/2 mx-5 -translate-y-1/2 bg-white border border-red-400 rounded-full p-3 text-red-500 hover:bg-red-500 hover:text-white transition"
+          className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10
+          bg-white border border-[#9E7A57] rounded-full p-3 text-[#9E7A57]
+          hover:bg-[#5C4733] hover:text-white transition"
         >
           &lt;
         </button>
@@ -71,25 +79,27 @@ export default function Feature() {
         <div className="flex justify-center">
           <Image
             src={fiturList[active].img}
-            alt="fitur"
-            width={300}
-            height={600}
-            className="rounded-xl"
+            alt={fiturList[active].title}
+            width={800}
+            height={1600}
+            className="rounded-xl max-w-[250px] sm:max-w-[300px] md:max-w-[350px] w-full h-auto"
           />
         </div>
 
         {/* Text */}
-        <div className="p-10">
+        <div>
           <h3 className="text-2xl font-bold mb-3">{fiturList[active].title}</h3>
           <p className="text-gray-600 leading-relaxed">
             {fiturList[active].desc}
           </p>
         </div>
 
-        {/* Right Arrow */}
+        {/* Arrow desktop only */}
         <button
           onClick={nextSlide}
-          className="absolute right-0 top-1/2 -translate-y-1/2 mx-5 bg-white border border-red-400 rounded-full p-3 text-red-500 hover:bg-red-500 hover:text-white transition"
+          className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10
+          bg-white border border-[#9E7A57] rounded-full p-3 text-[#9E7A57]
+          hover:bg-[#5C4733] hover:text-white transition"
         >
           &gt;
         </button>
