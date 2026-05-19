@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, Globe, Code2, ExternalLink } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const footerLinks = {
   services: [
@@ -157,17 +158,17 @@ export default function Footer() {
             © 2026 Archana Web Developer. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
+            <Link
+              href="/terms"
+              className="text-xs text-white/40 hover:text-white/60 transition-colors"
+            >
+              Terms & Conditions
+            </Link>
             <a
               href="#"
               className="text-xs text-white/40 hover:text-white/60 transition-colors"
             >
               Privacy Policy
-            </a>
-            <a
-              href="#"
-              className="text-xs text-white/40 hover:text-white/60 transition-colors"
-            >
-              Terms of Service
             </a>
           </div>
         </div>
