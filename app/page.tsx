@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Portfolio from "@/components/Portfolio";
 import WhyUs from "@/components/WhyUs";
 import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Portfolio />
         <WhyUs />
         <Pricing />
+        <FAQ />
         <CTA />
       </main>
       <Footer />
