@@ -57,16 +57,17 @@ export default function Hero() {
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-[#3d2c1e] leading-[1.1] tracking-tight">
               Jasa Pembuatan{" "}
               <span className="bg-gradient-to-r from-[#AD8B73] to-[#CEAB93] bg-clip-text text-transparent">
-                Website Profesional
+                Website & Aplikasi
               </span>{" "}
               untuk Bisnis Anda
             </h1>
 
             {/* Subheadline */}
             <p className="mt-6 text-lg text-[#3d2c1e]/60 leading-relaxed max-w-lg">
-              Archana Web Developer membangun website modern, cepat, dan SEO friendly
-              di Klaten, Jawa Tengah. Spesialis landing page, company profile, web app,
-              dan sistem informasi yang mengkonversi pengunjung menjadi pelanggan setia.
+              Archana Web Developer membangun website dan aplikasi modern yang
+              membantu jalannya bisnis dan usaha Anda. Spesialis landing page,
+              company profile, web app, sistem informasi, dan aplikasi custom
+              di Klaten, Jawa Tengah.
             </p>
 
             {/* CTA Buttons */}
