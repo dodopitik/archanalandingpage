@@ -7,7 +7,7 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://archanawebdeveloper.com";
+const siteUrl = "https://archana.co.id";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

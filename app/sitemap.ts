@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const siteUrl = "https://archanawebdeveloper.com";
+  const siteUrl = "https://archana.co.id";
   const lastModified = new Date();
 
   return [
